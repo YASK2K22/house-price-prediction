@@ -1,0 +1,43 @@
+PS C:\Users\Yashk\OneDrive\Desktop\PROS\Predictive Modeling House Prices> python house_price_predictor.py
+--- Sample Data ---
+   Area_sqft  Bedrooms  Bathrooms          Price
+0       1660         3          3  181793.380556
+1       2094         3          2  231717.040897
+2       1930         2          1  128876.888383
+3       1895         4          3  258602.489745
+4       2438         4          3  299178.558417
+
+--- Data Info ---
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 100 entries, 0 to 99
+Data columns (total 4 columns):
+ #   Column     Non-Null Count  Dtype
+---  ------     --------------  -----
+ 0   Area_sqft  100 non-null    int32
+ 1   Bedrooms   100 non-null    int32
+ 2   Bathrooms  100 non-null    int32
+ 3   Price      100 non-null    float64
+dtypes: float64(1), int32(3)
+memory usage: 2.1 KB
+
+--- Data Description ---
+        Area_sqft  Bedrooms   Bathrooms          Price
+count   100.00000  100.0000  100.000000     100.000000        
+mean   1909.35000    2.9600    1.990000  195414.252020        
+std     620.65904    0.8278    0.834787   60862.454174        
+min     821.00000    2.0000    1.000000  100000.000000        
+50%    1888.50000    3.0000    2.000000  195976.026371
+75%    2372.25000    4.0000    3.000000  242769.791754
+max    2982.00000    4.0000    3.000000  320263.190358
+
+Training data size: 80
+Testing data size: 20
+
+--- Model Training Complete ---
+Model Coefficients: [   39.81776516 24489.92997741  7748.96624205]
+Model Intercept: 31056.73457312357
+
+--- Model Evaluation ---
+Mean Squared Error (MSE): 2005464119.86
+R-squared (R2): 0.56
+
